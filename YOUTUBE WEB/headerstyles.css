@@ -1,0 +1,269 @@
+body{
+    background-color: black;
+    margin: 0;
+    color: white;
+    scrollbar-color: grey black;
+    scrollbar-width: thin;
+}
+header{
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 8px 15px;
+    background-color: #000000;
+}
+.menu{
+    width: 27px;
+}
+.menu-btn{
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.menu-btn:hover{
+    transition: 0.5s ease;
+    background-color: #1d1c1c;
+}
+.ytref{
+    width: 120px;
+    padding-left: 20px;
+    background-color: black;
+}
+.ytref-btn{
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.search-con{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+}
+.search-form{
+    display: flex;
+    width: 100%;  
+    border: 1px solid rgb(141, 141, 141);
+    max-width: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.search-ip{
+    flex-grow: 1;
+    background-color: black;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 15px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.search-ip::placeholder{
+    color: grey;
+}
+.search-btn{
+    background-color: rgb(2, 2, 2);
+    border: none;
+    padding: 0 16px;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    flex-shrink: 0;
+}
+.search-btn:hover{
+    transition: 0.5s ease;
+    background-color: #1d1c1c;
+}
+.search-icon{
+    width: 30px ;
+    height: auto;
+
+}
+.mike-con{
+    display: flex;
+    padding-left: 10px;
+}
+.mic-icn{
+    width: 50px;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+
+}
+.mic-btn{
+    border: none;
+    outline: none;
+    background-color: black;
+    border-radius: 40px;
+    position: relative;
+}
+.mic-btn:hover{
+    transition: 0.5s ease;
+    background-color: rgb(59, 59, 59);
+    cursor: pointer;
+}
+.mic-btn::after{
+    content: attr(data-tooltip);
+
+    background-color: #3b3b3b;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px;
+    z-index: 1000;
+    white-space: nowrap;
+
+    position: absolute;
+    bottom: -50px;
+    left:50%;
+    transform: translate(-45%);
+
+    opacity: 0;
+    transition: 0.3s;
+}
+.mic-btn:hover::after{
+    opacity: 1;
+}
+.right-logos{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    gap:5px;
+    margin-right: 20px;
+}
+.create-con{
+    display: flex;
+}
+.create-btn{
+    color: aliceblue;
+    background-color: #1d1c1c;
+    border: none;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+.create-btn:hover{
+    background-color: #3b3b3b;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.bell-con{
+    display: flex;
+}
+.bell-btn{
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+}
+.bell-icn{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.bell-btn:hover{
+    transition: 0.5s ease;
+    background-color: rgb(31, 31, 31);
+    cursor: pointer;
+}
+.bell-btn::after{
+    content: attr(data-tooltip);
+
+    background-color: #3b3b3b;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px;
+    z-index: 1000;
+    white-space: nowrap;
+
+    position: absolute;
+    bottom: -40px;
+    left:50%;
+    transform: translate(-45%);
+    display: flex;
+    flex-grow: 1;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+.bell-btn:hover::after{
+    opacity: 1;
+}
+.pro-con{
+    display: flex;
+}
+
+.pro-btn{
+    background-color: #000000;
+    border: none;
+    display: flex;
+    position: relative;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.pro-icn{
+    width:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.pro-btn:hover{
+    background-color: #3b3b3b;
+    transition: 0.5s;
+}
+.pro-btn::after{
+    content: attr(data-tooltip);
+
+    background-color: #3b3b3b;
+    color: aliceblue;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px;
+    z-index: 1000;
+    white-space: nowrap;
+
+    position: absolute;
+    bottom: -40px;
+    left:50%;
+    transform: translate(-45%);
+    display: flex;
+    flex-grow: 1;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+.pro-btn:hover::after{
+    opacity: 1;
+}
+
+
+
+
+
+
+
